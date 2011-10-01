@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Thomas Belin</title>
+		<meta charset="UTF-8"/>
+		<link title="style 1" rel="stylesheet" type="text/css" href="style/style.css"/>
+		<script type="text/javascript" src="js/general.js"></script>
+	</head>
+	
+	<body>
+		<div id="contenantSite">
+	
+			<div id="main">
+				<canvas id='canvas' onmousemove="javascript:canvas.onmousemove(event);" height="500px" width="1500px" style='height:500px; width:1500px'></canvas>
+			</div>
+		</div>
+			
+		<div id="footer">
+		 	Thomas Belin <br/>
+			ThomasBelin4@gmail.com
+		</div>
+		<script language="Javascript" type='text/javascript'>
+			canvas = new CanvasController('canvas');
+			canvas.init();
+			document.onclick = canvas.onclick;
+		</script>
+	</body>
+</html>
+
